@@ -3,64 +3,291 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
+  <title>Gerald Gabriel Li | IT Professional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=DM+Mono:wght@300;400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-text">GGL</div>
+  </div>
+
+  <!-- CURSOR -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
   <!-- NAVBAR -->
-  <nav>
-    <span class="logo">MyPortfolio</span>
-    <ul>
+  <nav id="navbar">
+    <div class="nav-logo">GGL<span class="dot">.</span></div>
+    <ul class="nav-links">
       <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <div class="nav-status">
+      <span class="status-dot"></span> Open to Work
+    </div>
   </nav>
 
   <!-- HERO -->
   <section id="hero">
-    <h1>Hi, I'm <span id="typed-name"></span></h1>
-    <p>Web Developer | Designer | Problem Solver</p>
-    <a href="#projects" class="btn">View My Work</a>
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="mono">01 /</span> IT Graduate · Philippines
+      </div>
+      <h1 class="hero-name">
+        <span class="line">Gerald</span>
+        <span class="line">Gabriel</span>
+        <span class="line accent">Li<span class="dot">.</span></span>
+      </h1>
+      <p class="hero-sub">
+        Computer Science Graduate &amp; Aspiring Software Developer<br>
+        passionate about building meaningful digital solutions.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
   </section>
 
   <!-- ABOUT -->
   <section id="about">
-    <h2>About Me</h2>
-    <p>I'm a passionate developer who loves building clean and functional websites.</p>
+    <div class="section-label"><span class="mono">02 /</span> About Me</div>
+    <div class="about-grid">
+      <div class="about-photo">
+        <div class="photo-placeholder">
+          <span class="initials">GGL</span>
+          <div class="photo-frame"></div>
+        </div>
+        <div class="about-card">
+          <div class="card-item">
+            <span class="card-label">Degree</span>
+            <span class="card-value">BS Information Technology</span>
+          </div>
+          <div class="card-item">
+            <span class="card-label">Status</span>
+            <span class="card-value available">Available for Hire</span>
+          </div>
+          <div class="card-item">
+            <span class="card-label">Location</span>
+            <span class="card-value">Philippines 🇵🇭</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-text">
+        <h2>Crafting solutions through code and creativity.</h2>
+        <p>
+          I am Gerald Gabriel Li, a dedicated Information Technology graduate with a strong foundation in software development, 
+          systems analysis, and modern web technologies. I thrive at the intersection of technical precision and 
+          creative problem-solving.
+        </p>
+        <p>
+          Throughout my academic journey, I have built expertise in full-stack development, database management, 
+          and software engineering principles. I am passionate about writing clean, efficient code and 
+          delivering solutions that make a real difference.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">4+</span>
+            <span class="stat-label">Years of Study</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Tech Stacks</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-label"><span class="mono">03 /</span> Technical Skills</div>
+    <h2 class="section-title">Technologies &amp; Tools</h2>
+    <div class="skills-grid">
+
+      <div class="skill-group">
+        <div class="skill-group-title">Frontend</div>
+        <div class="skill-tags">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">React</span>
+          <span class="tag">Bootstrap</span>
+          <span class="tag">Tailwind CSS</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-title">Backend</div>
+        <div class="skill-tags">
+          <span class="tag">Node.js</span>
+          <span class="tag">PHP</span>
+          <span class="tag">Python</span>
+          <span class="tag">Java</span>
+          <span class="tag">REST APIs</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-title">Database</div>
+        <div class="skill-tags">
+          <span class="tag">MySQL</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">Firebase</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-title">Tools &amp; Others</div>
+        <div class="skill-tags">
+          <span class="tag">Git &amp; GitHub</span>
+          <span class="tag">VS Code</span>
+          <span class="tag">Figma</span>
+          <span class="tag">Linux</span>
+          <span class="tag">Networking</span>
+        </div>
+      </div>
+
+    </div>
   </section>
 
   <!-- PROJECTS -->
   <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="card">
-        <h3>Project One</h3>
-        <p>A web app built with HTML, CSS, and JavaScript.</p>
-        <a href="#">View →</a>
+    <div class="section-label"><span class="mono">04 /</span> Projects</div>
+    <h2 class="section-title">Featured Work</h2>
+    <div class="projects-grid">
+
+      <div class="project-card featured">
+        <div class="project-num mono">01</div>
+        <div class="project-info">
+          <h3>Student Information System</h3>
+          <p>A full-stack web application for managing student records, enrollment, and academic performance tracking. Built with PHP, MySQL, and Bootstrap.</p>
+          <div class="project-tags">
+            <span>PHP</span><span>MySQL</span><span>Bootstrap</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="#" class="proj-link">GitHub →</a>
+          <a href="#" class="proj-link">Live Demo →</a>
+        </div>
       </div>
-      <div class="card">
-        <h3>Project Two</h3>
-        <p>A responsive landing page for a product.</p>
-        <a href="#">View →</a>
+
+      <div class="project-card">
+        <div class="project-num mono">02</div>
+        <div class="project-info">
+          <h3>Inventory Management App</h3>
+          <p>A desktop-based inventory system with real-time stock monitoring, alerts, and automated reports for small businesses.</p>
+          <div class="project-tags">
+            <span>Java</span><span>MySQL</span><span>JavaFX</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="#" class="proj-link">GitHub →</a>
+        </div>
       </div>
-      <div class="card">
-        <h3>Project Three</h3>
-        <p>A to-do app with local storage support.</p>
-        <a href="#">View →</a>
+
+      <div class="project-card">
+        <div class="project-num mono">03</div>
+        <div class="project-info">
+          <h3>E-Commerce Website</h3>
+          <p>A responsive online store with product listings, shopping cart, user authentication, and payment gateway integration.</p>
+          <div class="project-tags">
+            <span>React</span><span>Node.js</span><span>MongoDB</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="#" class="proj-link">GitHub →</a>
+          <a href="#" class="proj-link">Live Demo →</a>
+        </div>
       </div>
+
+      <div class="project-card">
+        <div class="project-num mono">04</div>
+        <div class="project-info">
+          <h3>Network Monitoring Tool</h3>
+          <p>A Python-based network diagnostic tool that monitors bandwidth usage, detects anomalies, and generates performance reports.</p>
+          <div class="project-tags">
+            <span>Python</span><span>Networking</span><span>Linux</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="#" class="proj-link">GitHub →</a>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- CONTACT -->
   <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:you@email.com">you@email.com</a></p>
+    <div class="section-label"><span class="mono">05 /</span> Contact</div>
+    <div class="contact-wrapper">
+      <div class="contact-left">
+        <h2>Let's work<br><em>together.</em></h2>
+        <p>I'm actively looking for entry-level or junior IT roles. Whether you have a project, a job opportunity, or just want to connect — my inbox is always open.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <span class="contact-icon">✉</span>
+            <a href="mailto:geraldli2330@gmail.com">geraldli2330@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <a href="tel:+639925649440">+63 992 564 9440</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <span>Philippines</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-right">
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" placeholder="Juan dela Cruz" required />
+          </div>
+          <div class="form-group">
+            <label>Your Email</label>
+            <input type="email" placeholder="juan@email.com" required />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full">Send Message</button>
+          <p id="form-msg" class="form-success"></p>
+        </form>
+      </div>
+    </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
-    <p>© 2026 MyPortfolio. All rights reserved.</p>
+    <div class="footer-inner">
+      <div class="footer-logo">GGL<span class="dot">.</span></div>
+      <p class="footer-copy">© 2026 Gerald Gabriel Li. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+        <a href="mailto:geraldli2330@gmail.com">Email</a>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
